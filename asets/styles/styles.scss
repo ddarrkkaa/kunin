@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
 @import "./_variables", "./_vars";
 
-body {
-  background-color: var(--white);
-  font-family: "Manrope", sans-serif;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 .header {
   top: 0;
   left: 0;
@@ -31,13 +21,12 @@ img {
       &__link {
         a {
           text-decoration: none;
-          font-size: var(--size-16);
+          font-size: 16px;
           color: var(--color-black);
           margin-right: 24px;
 
           &:hover {
             transition: all 0.5s ease-out;
-            font-size: var(--size-20);
             text-shadow: var(--black) 5px 0 10px;
           }
         }
@@ -54,7 +43,7 @@ img {
     margin-top: 64px;
 
     &-heading {
-      font-size: var(--size-80);
+      font-size: 80px;
       text-align: center;
       margin: 0;
     }
@@ -89,12 +78,12 @@ img {
       text-align: center;
 
       &-main {
-        font-size: var(--size-72);
+        font-size: 72px;
         margin: 0;
       }
 
       &-subtitle {
-        font-size: var(--size-20);
+        font-size: 20px;
         margin-top: 0;
       }
     }
@@ -142,7 +131,7 @@ img {
 
       padding: 32px 40px;
       margin-bottom: 20px;
-      border-radius: var(--border-radius-20);
+      border-radius: 20px;
       background-color: var(--white-additional);
 
       &__profile {
@@ -169,7 +158,7 @@ img {
   &__section {
     margin-top: 120px;
     background-color: var(--black);
-    border-radius: var(--border-radius-40);
+    border-radius: 40px;
     color: var(--white);
     display: flex;
     align-items: center;
@@ -187,13 +176,13 @@ img {
       width: 100%;
 
       &-info {
-        font-size: var(--size-40);
+        font-size: 40px;
         margin-bottom: 73px;
       }
     }
     &__img {
       background-color: var(--white);
-      border-radius: var(--border-radius-40);
+      border-radius: 40px;
 
       &-box {
         padding: 24px 193px 38px;
@@ -251,7 +240,7 @@ img {
   }
   &__swiper {
     &__heading {
-      font-size: var(--size-72);
+      font-size: 72px;
       max-width: 850px;
       width: 100%;
       padding-bottom: 48px;
@@ -259,7 +248,7 @@ img {
     }
 
     &__slide {
-      border-radius: var(--border-radius-20);
+      border-radius: 20px;
       background-color: var(--gray-light);
       max-width: 697px;
       width: 100%;
@@ -275,7 +264,7 @@ img {
         &__count {
           h2 {
             margin: 0;
-            font-size: var(--size-72);
+            font-size: 72px;
           }
         }
 
@@ -285,12 +274,12 @@ img {
           width: 100%;
 
           &-heading {
-            font-size: var(--size-20);
+            font-size: 20px;
             margin: 0;
           }
 
           &-subtitle {
-            font-size: var(--size-16);
+            font-size: 16px;
           }
         }
       }
@@ -307,52 +296,56 @@ img {
 
 .invest {
   &__section {
-    max-width: 1706px;
-    width: 100%;
-    margin: 148px auto;
+    margin-top: 148px;
     display: flex;
     justify-content: space-between;
-    border-radius: var(--border-radius-20);
+    border-radius: 20px;
+    position: relative;
 
     &__white,
     &__black {
       &__heading {
-        font-size: var(--size-32);
+        font-size: 32px;
+        margin: 0;
+        max-width: 500px;
+        width: 100%;
       }
       &__text {
-        font-size: var(--size-20);
+        font-size: 20px;
         max-width: 408px;
         width: 100%;
       }
     }
 
     &__black {
-      border-radius: var(--border-radius-20);
-      background-color: var(--black);
       color: var(--white);
-      max-width: 840px;
+      background-color: var(--black);
+      border-radius: 20px;
+      max-width: 552px;
       width: 100%;
-      position: absolute;
-      padding: 127px 0 125px 140px;
-
-      &__heading {
-        max-width: 478px;
-        width: 100%;
-      }
+      padding: 125px 144px;
     }
 
-    &__img {
-      position: relative;
-      left: 45%;
+    &__pic {
+      position: absolute;
       max-width: 340px;
       width: 100%;
-      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     &__white {
-      // padding-top: 132px;
-      // padding-right: 145px;
-      position: relative;
+      position: absolute;
+      bottom: 135px;
+      right: 85px;
+      font-size: 36px;
+      color: var(--black);
+      margin: 0;
+
+      &__button {
+        margin-top: 80px;
+      }
     }
   }
 }
@@ -369,13 +362,21 @@ img {
     &-slide {
       &-active {
         background-color: var(--green);
+
+        .benefits__swiper__slide__heading__img {
+          path {
+            fill: white;
+            stroke: black !important;
+          }
+          background-color: var(--white);
+        }
       }
     }
   }
 
   &__swiper {
     &__heading {
-      font-size: var(--size-72);
+      font-size: 72px;
       max-width: 1170px;
       width: 100%;
       padding-bottom: 48px;
@@ -383,7 +384,7 @@ img {
     }
 
     &__slide {
-      border-radius: var(--border-radius-20);
+      border-radius: 20px;
       background-color: var(--gray-light);
       max-width: 507px;
       width: 100%;
@@ -398,7 +399,7 @@ img {
           max-width: 59px;
           padding: 16px;
           background-color: var(--black);
-          border-radius: var(--border-radius-20);
+          border-radius: 20px;
         }
         &__text {
           margin-left: 16px;
@@ -406,7 +407,7 @@ img {
 
         &__text {
           margin: 0 0 0 16px;
-          font-size: var(--size-20);
+          font-size: 20px;
         }
       }
     }
@@ -418,12 +419,12 @@ img {
     margin-top: 120px;
 
     &__heading {
-      font-size: var(--size-72);
+      font-size: 72px;
       max-width: 1000px;
       margin-bottom: 0;
 
       &-small {
-        font-size: var(--size-20);
+        font-size: 20px;
         font-weight: normal;
         margin-top: 0;
       }
@@ -437,7 +438,7 @@ img {
         &__feature {
           max-width: fit-content;
           width: 100%;
-          border-radius: var(--border-radius-20);
+          border-radius: 20px;
           padding: 156px 153px 56px;
           box-sizing: border-box;
           margin-left: 24px;
@@ -449,7 +450,7 @@ img {
           li {
             margin-top: 56px;
             text-align: center;
-            font-size: var(--size-20);
+            font-size: 20px;
             height: 64px;
             line-height: 64px;
 
@@ -483,13 +484,13 @@ img {
       &-slide {
         max-width: fit-content;
         width: 100%;
-        border-radius: var(--border-radius-20);
+        border-radius: 20px;
         padding: 56px 133px;
         box-sizing: border-box;
         margin-left: 24px;
 
         &-heading {
-          font-size: var(--size-32);
+          font-size: 32px;
         }
 
         ul {
@@ -526,12 +527,10 @@ img {
         max-width: 1130px;
         width: 100%;
       }
-
       &__text {
         font-weight: normal;
-        padding-left: 24px;
         width: 650px;
-        font-size: var(--size-18);
+        font-size: 18px;
         margin: 0;
       }
 
@@ -580,13 +579,13 @@ img {
   }
   &__swiper {
     &__heading {
-      font-size: var(--size-72);
+      font-size: 72px;
       max-width: 1100px;
       width: 100%;
 
       margin: 0;
       &-small {
-        font-size: var(--size-20);
+        font-size: 20px;
         font-weight: normal;
         margin: 0;
         padding-bottom: 48px;
@@ -594,7 +593,7 @@ img {
     }
 
     &__slide {
-      border-radius: var(--border-radius-20);
+      border-radius: 20px;
       background-color: var(--gray-light);
       max-width: 522px;
 
@@ -610,7 +609,7 @@ img {
         &__count {
           h2 {
             margin: 0;
-            font-size: var(--size-72);
+            font-size: 72px;
           }
         }
 
@@ -618,13 +617,100 @@ img {
           margin: 0;
 
           &-heading {
-            font-size: var(--size-20);
+            font-size: 20px;
             margin: 0;
             margin-top: 65px;
           }
 
           &-subtitle {
-            font-size: var(--size-16);
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.kunin {
+  &__section {
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 120px;
+
+    &__item {
+      &__black {
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 20px;
+        max-width: 552px;
+        width: 100%;
+        padding: 135px 144px;
+
+        &__heading {
+          font-size: 32px;
+        }
+
+        &__list {
+          font-size: 16px;
+
+          ul {
+            list-style-image: url("../images/arrow.svg");
+          }
+          li {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      &__pic {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+        &__box {
+          position: relative;
+          max-width: 545px;
+          width: 100%;
+          &-text {
+            position: absolute;
+            bottom: 16px;
+            right: 33px;
+            font-size: 36px;
+            color: var(--white);
+            margin: 0;
+          }
+        }
+      }
+
+      &__achivments {
+        &__box {
+          position: absolute;
+          z-index: -1;
+          top: 42px;
+          right: 115px;
+
+          display: flex;
+          flex-direction: column;
+          max-width: 255px;
+          width: 100%;
+
+          &__item {
+            text-align: center;
+            margin-bottom: 32px;
+
+            :first-child {
+              margin-top: 61px;
+            }
+
+            &__heading {
+              margin: 0;
+              font-size: 64px;
+            }
+            &__text {
+              margin: 0;
+              font-size: 20px;
+            }
           }
         }
       }
@@ -635,9 +721,9 @@ img {
 .advantages {
   &__section {
     &__heading {
-      font-size: var(--size-72);
+      font-size: 72px;
       &-small {
-        font-size: var(--size-20);
+        font-size: 20px;
         font-weight: normal;
       }
     }
@@ -652,20 +738,36 @@ img {
         width: 100%;
         height: 253px;
         background-color: var(--gray-light);
-        border-radius: var(--border-radius-20);
+        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: var(--size-20);
+        font-size: 20px;
         text-decoration: none;
         color: var(--black);
 
+        &__header {
+          font-size: 20px;
+          padding: 24px;
+        }
+        &__text {
+          display: none;
+          padding: 24px;
+          font-size: 18px;
+        }
+
         &:hover {
           background-color: var(--green);
+          .advantages__section__links__item__header {
+            display: none;
+          }
+          .advantages__section__links__item__text {
+            display: block;
+          }
         }
       }
       &:first-child {
-        font-size: var(--size-18);
+        font-size: 18px;
       }
     }
 
@@ -684,14 +786,81 @@ img {
         font-weight: normal;
         padding-left: 24px;
         width: 650px;
-        font-size: var(--size-18);
+        font-size: 18px;
         margin: 0;
       }
 
       &__button {
         padding: 16px 160px;
+        border-radius: 40px;
       }
     }
+  }
+}
+
+.faq {
+  &__section {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 120px;
+    padding: 34px 71px 54px;
+
+    &__box {
+      padding-right: 240px;
+      max-width: 607px;
+      width: 100%;
+      &__heading {
+        font-size: 64px;
+      }
+      &__text {
+        font-size: 20px;
+      }
+    }
+
+    &__dropdown-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 74px;
+    }
+  }
+
+  .dropdown {
+    cursor: pointer;
+    border-bottom: 0.1px solid var(--gray-dark);
+    padding-right: 37px;
+  }
+
+  .dropdown__content {
+    max-height: 0;
+    transition: 200ms;
+    overflow: hidden;
+    padding: 0 1rem;
+  }
+
+  .dropdown__title {
+    position: relative;
+    padding-right: 1.5em;
+  }
+
+  .dropdown__title::after {
+    content: "+";
+    float: right;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+  }
+
+  .dropdown.active .dropdown__content {
+    max-height: 100vh;
+    padding: 1rem;
+    transition: 400ms;
+  }
+
+  .dropdown.active .dropdown__title::after {
+    content: "-";
   }
 }
 
@@ -705,14 +874,14 @@ img {
 
     padding: 32px;
 
-    border-radius: var(--border-radius-20);
+    border-radius: 20px;
 
     &__heading {
-      font-size: var(--size-48);
+      font-size: 48px;
       margin-bottom: 0;
     }
     &__text {
-      font-size: var(--size-20);
+      font-size: 20px;
     }
     &__button {
       padding: 16px 90px;
@@ -761,11 +930,11 @@ footer {
     &__form {
       .formm {
         padding: 10px 80px;
-        border-radius: var(--border-radius-20);
+        border-radius: 20px;
         text-decoration: none;
       }
       &__heading {
-        font-size: var(--size-18);
+        font-size: 18px;
       }
       &__button {
         padding: 12px 16px;
