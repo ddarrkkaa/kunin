@@ -27,7 +27,6 @@
 
           &:hover {
             transition: all 0.5s ease-out;
-            text-shadow: var(--black) 5px 0 10px;
           }
         }
         a:last-child {
@@ -66,13 +65,11 @@
 }
 
 .review {
-  padding-left: 95px;
-  overflow: hidden;
+  margin-top: 80px;
+  margin-bottom: 122px;
 
   &__swiper {
-    margin-top: 80px;
-    margin-bottom: 122px;
-
+    padding: 50px;
     &__heading {
       padding-bottom: 48px;
       text-align: center;
@@ -89,7 +86,7 @@
     }
   }
 
-  .slider1 {
+  .slider {
     &__buttons {
       display: flex;
       gap: 24px;
@@ -161,13 +158,7 @@
     border-radius: 40px;
     color: var(--white);
     display: flex;
-    align-items: center;
-    justify-content: end;
-
-    .crypto_phone {
-      max-width: 639px;
-      width: 100%;
-    }
+    justify-content: space-between;
 
     &__text {
       color: var(--white);
@@ -183,10 +174,8 @@
     &__img {
       background-color: var(--white);
       border-radius: 40px;
-
       &-box {
         padding: 24px 193px 38px;
-        width: 311px;
       }
     }
   }
@@ -205,19 +194,60 @@
 
 .role {
   margin-top: 120px;
-  padding-left: 95px;
-  overflow: hidden;
-
-  &__swiper-pagination {
+  &__heading {
+    font-size: 72px;
+    max-width: 850px;
     width: 100%;
-    display: flex;
-    justify-content: end;
+    padding-bottom: 48px;
+    margin: 0;
+    margin-left: 95px;
+  }
+
+  &__swiper {
+    padding: 50px;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0;
+      max-width: 308px;
+      width: 100%;
+      &__count {
+        margin: 0;
+        font-size: 72px;
+      }
+      &__heading {
+        font-size: 20px;
+        margin: 0;
+      }
+      &__subtitle {
+        font-size: 16px;
+      }
+    }
+    &__img {
+      padding-top: 72px;
+    }
   }
   .swiper {
+    padding-left: 95px;
+    &-slide {
+      border-radius: 20px;
+      background-color: var(--gray-light);
+      padding: 32px 40px;
+      display: flex;
+      gap: 32px;
+      &-active {
+        background-color: var(--green);
+      }
+    }
+
     &-pagination {
       position: static;
-      width: 380px !important;
-
+      // width: 380px !important;
+      display: flex;
+      justify-content: end;
+      margin-top: 24px;
       &-bullet {
         transition: all 0.5s ease-out;
         border-radius: 10px;
@@ -230,65 +260,6 @@
           width: 119px;
           height: 4px;
         }
-      }
-    }
-    &-slide {
-      &-active {
-        background-color: var(--green);
-      }
-    }
-  }
-  &__swiper {
-    &__heading {
-      font-size: 72px;
-      max-width: 850px;
-      width: 100%;
-      padding-bottom: 48px;
-      margin: 0;
-    }
-
-    &__slide {
-      border-radius: 20px;
-      background-color: var(--gray-light);
-      max-width: 697px;
-      width: 100%;
-      max-height: 507px;
-      padding: 32px 40px;
-      display: flex;
-      justify-content: space-between;
-
-      &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        &__count {
-          h2 {
-            margin: 0;
-            font-size: 72px;
-          }
-        }
-
-        &__text {
-          margin: 0;
-          max-width: 308px;
-          width: 100%;
-
-          &-heading {
-            font-size: 20px;
-            margin: 0;
-          }
-
-          &-subtitle {
-            font-size: 16px;
-          }
-        }
-      }
-
-      &-img {
-        max-width: 277px;
-        width: 100%;
-
-        padding-top: 72px;
       }
     }
   }
@@ -321,9 +292,7 @@
       color: var(--white);
       background-color: var(--black);
       border-radius: 20px;
-      max-width: 552px;
-      width: 100%;
-      padding: 125px 144px;
+      padding: 110px 170px;
     }
 
     &__pic {
@@ -349,72 +318,141 @@
     }
   }
 }
+// margin-top: 120px;
+// margin-left: 95px;
+// overflow: hidden;
+
+// .benefits {
+//   &__heading {
+//     display: flex;
+//     align-items: center;
+//     font-size: 72px;
+//     max-width: 1170px;
+//     width: 100%;
+//     padding-bottom: 48px;
+//     margin: 0;
+//   }
+//   &__swiper {
+//     border-radius: 20px;
+//     background-color: var(--gray-light);
+//     max-width: 507px;
+//     width: 100%;
+//     padding: 32px 40px;
+//     margin-left: 60px;
+//     &__heading {
+//       display: flex;
+//       gap: 16px;
+
+//       &__img {
+//         background-color: var(--black);
+//         border-radius: 20px;
+//         svg {
+//           margin: 16px;
+//         }
+//       }
+//       &__title {
+//       }
+//     }
+//     &__info {
+//     }
+//   }
+//   .swiper {
+//     &-wrapper {
+//       margin-bottom: 20px;
+//     }
+//     &-slide {
+//       &-active {
+//         background-color: var(--green);
+
+//         .benefits__swiper__slide__heading__img {
+//           path {
+//             fill: white;
+//             stroke: black !important;
+//           }
+//           background-color: var(--white);
+//         }
+//       }
+//     }
+//   }
+
+//   // &__swiper {
+//   //   &__heading {
+//   //     font-size: 72px;
+//   //     max-width: 1170px;
+//   //     width: 100%;
+//   //     padding-bottom: 48px;
+//   //     margin: 0;
+//   //   }
+
+//   //   &__slide {
+//   //     border-radius: 20px;
+//   //     background-color: var(--gray-light);
+//   //     max-width: 507px;
+//   //     width: 100%;
+//   //     padding: 32px 40px;
+
+//   //     &__heading {
+//   //       &__img {
+//   //         padding: 16px;
+//   //         background-color: var(--black);
+//   //         border-radius: 20px;
+//   //       }
+//   //       &__text {
+//   //         margin: 0 0 0 16px;
+//   //         font-size: 20px;
+//   //       }
+//   //     }
+//   //   }
+//   // }
+// }
 
 .benefits {
-  margin-top: 120px;
-  padding-left: 95px;
-  overflow: hidden;
-
-  .swiper {
-    &-wrapper {
-      margin-bottom: 20px;
-    }
-    &-slide {
-      &-active {
-        background-color: var(--green);
-
-        .benefits__swiper__slide__heading__img {
-          path {
-            fill: white;
-            stroke: black !important;
-          }
-          background-color: var(--white);
-        }
-      }
-    }
-  }
-
-  &__swiper {
+  &__section {
     &__heading {
+      display: flex;
       font-size: 72px;
-      max-width: 1170px;
-      width: 100%;
       padding-bottom: 48px;
       margin: 0;
     }
-
+  }
+  &__swiper {
     &__slide {
-      border-radius: 20px;
-      background-color: var(--gray-light);
-      max-width: 507px;
-      width: 100%;
-      padding: 32px 40px;
-      display: flex;
-      justify-content: space-between;
-
+      height: 500px;
+      width: 600px;
       &__heading {
         display: flex;
-        align-items: center;
+
         &__img {
-          max-width: 59px;
           padding: 16px;
           background-color: var(--black);
           border-radius: 20px;
         }
-        &__text {
-          margin-left: 16px;
-        }
+      }
+      &__title {
+      }
+      &__info {
+      }
+    }
+  }
+}
+.swiper {
+  &-slide {
+    &-active {
+      background-color: var(--green);
 
-        &__text {
-          margin: 0 0 0 16px;
-          font-size: 20px;
+      .benefits__swiper__slide__heading__img {
+        path {
+          fill: white;
+          stroke: black !important;
         }
+        background-color: var(--white);
       }
     }
   }
 }
 
 .comparation {
+  overflow: hidden;
   &__section {
     margin-top: 120px;
 
@@ -542,9 +580,9 @@
 }
 
 .result {
-  margin-top: 120px;
-  padding-left: 95px;
-  overflow: hidden;
+  // margin-top: 120px;
+  // margin: 0 auto;
+  // overflow: hidden;
 
   &__swiper-pagination {
     width: 100%;
@@ -643,16 +681,19 @@
         color: var(--white);
         background-color: var(--black);
         border-radius: 20px;
-        max-width: 552px;
-        width: 100%;
-        padding: 135px 144px;
+
+        padding: 135px 170px;
 
         &__heading {
           font-size: 32px;
+          max-width: 552px;
+          width: 100%;
         }
 
         &__list {
           font-size: 16px;
+          max-width: 552px;
+          // width: 100%;
 
           ul {
             list-style-image: url("../images/arrow.svg");

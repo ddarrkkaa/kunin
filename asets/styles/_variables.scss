@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -39,9 +43,8 @@ img {
   font-size: 18px;
 
   &:hover {
-    border: 1px solid var(--black);
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--green);
     transition: all 0.5s ease-out;
   }
 }
