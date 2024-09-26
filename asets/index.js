@@ -20,11 +20,11 @@ const reviewSwiper = new Swiper(".review__swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  // breakpoints: {
-  //   375: {
-  //     slidesPerView: 1,
-  //   },
-  // },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 const roleSwiper = new Swiper(".role__swiper", {
