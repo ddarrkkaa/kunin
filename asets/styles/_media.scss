@@ -1,26 +1,15 @@
 @media screen and (max-width: 1720px) {
-  // .join {
-  //   &__container {
-  //     width: 1600px;
-  //   }
-  //   &__section {
-  //     &__text {
-  //       padding: 120px 24px 140px 100px;
-  //     }
-  //   }
-  // }
-  .kunin {
+  .join {
     &__section {
-      &__item {
-        &__pic {
-          &__box {
-            img {
-              max-width: 250px;
-            }
-          }
+      &__text {
+        &-info {
+          font-size: 28px;
         }
       }
     }
+  }
+  .invest {
+    padding: 0 20px;
   }
 }
 
@@ -28,11 +17,31 @@
   .container-header {
     max-width: 1440px;
   }
-  // .join {
-  //   &__container {
-  //     width: 1430px;
-  //   }
-  // }
+  .invest {
+    &__section {
+      &__pic {
+        transform: translate(-80%, -50%);
+        width: 250px;
+      }
+      &__white {
+        left: 65%;
+        right: 35px;
+      }
+      &__black {
+        padding-right: 230px;
+        padding-left: 40px;
+      }
+      &__white,
+      &__black {
+        &__heading {
+          font-size: 24px;
+        }
+        &__text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -45,33 +54,58 @@
   .result__section__title,
   .advantages__section__heading,
   .advantages__section__heading,
-  .form__section__heading,
-  .invest__section__black__heading,
-  .invest__section__white__heading {
+  .form__section__heading {
     font-size: 64px;
   }
-  // .join {
-  //   &__container {
-  //     width: 1200px;
-  //   }
-  //   &__section {
-  //     &__text {
-  //       &-info {
-  //         max-width: 640px;
-  //         font-size: 32px;
-  //       }
-  //       padding: 80px 24px 110px 80px;
-  //     }
-  //     &__img {
-  //       .crypto_phone {
-  //         width: 270px;
-  //       }
-  //       &-box {
-  //         padding: 24px 120px 38px;
-  //       }
-  //     }
-  //   }
-  // }
+  .invest {
+    &__section {
+      overflow: scroll;
+      &__black {
+        padding-right: 150px;
+      }
+
+      &__pic {
+        left: 110%;
+      }
+
+      &__white {
+        width: 300px;
+        top: 100px;
+        left: 120%;
+        padding-right: 20px;
+        &__button {
+          margin-top: 40px;
+          padding: 12px 48px;
+        }
+      }
+    }
+  }
+
+  .join {
+    &__section {
+      &__text {
+        padding: 100px 24px 140px 100px;
+        &-info {
+          margin-bottom: 20px;
+        }
+      }
+      &__img {
+        display: flex;
+        align-items: center;
+
+        .crypto_phone {
+          width: 250px;
+        }
+        &-box {
+          padding: 40px 100px 38px;
+        }
+      }
+    }
+    &__button {
+      padding: 16px 70px;
+    }
+  }
+
   .footer {
     &__info {
       &__messagers {
@@ -82,6 +116,16 @@
   .media-container {
     width: 1200px;
     margin: 70px auto;
+  }
+  .invest {
+    // margin-top: 64px;
+    &__section {
+      overflow: scroll;
+
+      &__black {
+        padding-right: 550px;
+      }
+    }
   }
 }
 
@@ -94,68 +138,28 @@
   .comparation__section__title,
   .result__section__title,
   .advantages__section__heading,
-  .form__section__heading,
-  .invest__section__black__heading,
-  .invest__section__white__heading {
+  .form__section__heading {
     font-size: 32px;
-  }
-  // .join {
-  //   &__container {
-  //     width: 970px;
-  //   }
-  //   &__section {
-  //     &__text {
-  //       &-info {
-  //         max-width: 640px;
-  //         font-size: 32px;
-  //       }
-  //       padding: 60px 24px 70px 80px;
-  //     }
-  //     &__img {
-  //       .crypto_phone {
-  //         width: 240px;
-  //       }
-  //       &-box {
-  //         padding: 24px 80px 38px;
-  //       }
-  //     }
-  //   }
-  // }
-  .invest {
-    &__section {
-      &__pic {
-        transform: translate(-55%, -50%);
-      }
-      &__white {
-        left: 65%;
-        padding-left: 30px;
-        &__button {
-          margin-top: 40px;
-        }
-      }
-      &__black {
-        padding-right: 230px;
-        padding-left: 40px;
-      }
-      &__white,
-      &__black {
-        &__heading {
-          font-size: 28px;
-          margin: 0;
-          width: 300px;
-        }
-        &__text {
-          font-size: 16px;
-          width: 308px;
-        }
-      }
-    }
   }
 
   .advantages {
     &__section {
       &__links {
         grid-template-columns: repeat(2, 2fr);
+      }
+    }
+  }
+
+  .comparation__section__box__blocks__item-heading {
+    font-size: 24px;
+    padding: 0 30px;
+  }
+  .comparation__section__box__features__items {
+    padding-left: 0;
+    padding-right: 0;
+    li {
+      &:first-child {
+        margin-top: 50px;
       }
     }
   }
@@ -189,73 +193,127 @@
       }
     }
   }
-  // .join {
-  //   &__container {
-  //     width: 650px;
-  //   }
-  //   &__section {
-  //     &__text {
-  //       &-info {
-  //         max-width: 400px;
-  //         font-size: 28px;
-  //         margin: 0;
-  //       }
-  //       &__media-button {
-  //         margin-top: 20px;
-  //         margin-bottom: 20px;
-  //       }
-  //       padding: 40px 24px 0 30px;
-  //     }
-  //     &__img {
-  //       .crypto_phone {
-  //         width: 150px;
-  //       }
-  //       &-box {
-  //         padding: 24px 30px 0;
-  //       }
-  //     }
-  //   }
-  // }
-  // .invest {
-  //   margin-top: 64px;
-  //   &__section {
-  //     overflow: scroll;
-  //     display: flex;
-  //     flex-direction: row;
-  //     overflow-x: auto;
-  //     scroll-snap-type: x mandatory;
-  //     width: 698px;
-  //     &__black {
-  //       width: 450px;
-  //     }
-
-  //     &__pic {
-  //       left: 90%;
-  //     }
-
-  //     &__white {
-  //       top: 15%;
-  //       left: 110%;
-  //     }
-  //   }
-  // }
-  .comparation {
+  .join {
+    padding: 0 20px;
     &__section {
-      &__subtitle {
-        font-size: 14px;
+      flex-direction: column;
+
+      text-align: center;
+      &__text {
+        padding: 24px;
+        &-info {
+          text-align: left;
+          font-size: 24px;
+          font-weight: normal;
+          margin: 0;
+        }
+        &__media-button {
+          margin: 0;
+          margin-top: 10px;
+        }
+      }
+      &__img {
+        display: flex;
+        justify-content: center;
+        &-box {
+          .crypto_phone {
+            width: 150px;
+          }
+        }
+      }
+    }
+    .join__button {
+      margin: 24px auto;
+    }
+  }
+
+  .comparation {
+    padding: 0 20px;
+    margin-top: 64px;
+    &__section {
+      &__title {
+        font-size: 24px;
+
+        &-subtitle {
+          font-size: 14px;
+        }
+      }
+
+      &__box {
+        &__features {
+          gap: 16px;
+
+          &__items {
+            padding: 30px 16px 32px;
+
+            li {
+              margin-top: 24px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+        &__blocks {
+          overflow: scroll;
+          padding: 20px;
+          .slide1 {
+            background-color: var(--white);
+          }
+
+          .slide2 {
+            background-color: var(--gray-dark);
+          }
+
+          .slide3 {
+            background-color: var(--black);
+            color: var(--white);
+          }
+
+          &__item {
+            padding: 32px 30px;
+            margin: 0;
+            margin-right: 16px;
+
+            &-heading {
+              font-size: 20px;
+              width: 110px;
+              margin-top: 10px;
+              margin: 0;
+              padding: 0;
+            }
+
+            ul {
+              padding: 0;
+              margin: 0;
+            }
+            li {
+              margin-top: 24px;
+
+              &:first-child {
+                margin: 0;
+              }
+
+              img {
+                width: 24px;
+              }
+            }
+          }
+        }
       }
       &__send {
+        justify-content: center;
+        padding: 32px 20px 0 20px;
         &-box {
           &__text {
-            margin: 0;
-          }
-          &__button {
-            font-size: 16px;
+            font-weight: normal;
+            font-size: 18px;
+            margin: 0 0 20px 0;
           }
         }
       }
     }
   }
+
   .comparation__button {
     button {
       padding: 12px 80px;
@@ -302,10 +360,18 @@
   .comparation__section__title,
   .result__section__title,
   .advantages__section__heading,
-  .form__section__heading,
-  .invest__section__black__heading,
-  .invest__section__white__heading {
+  .form__section__heading {
     font-size: 24px;
+  }
+
+  .invest {
+    // margin-top: 64px;
+    &__section {
+      overflow: scroll;
+      &__black {
+        padding-right: 350px;
+      }
+    }
   }
   .faq {
     &__section {
@@ -329,14 +395,6 @@
       }
     }
   }
-  .comparation {
-    &__section {
-      &__send-box {
-        &__button {
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -357,26 +415,6 @@
 
   .invest {
     margin-top: 64px;
-    // &__section {
-    //   overflow: scroll;
-    //   display: flex;
-    //   flex-direction: row;
-    //   overflow-x: auto;
-    //   scroll-snap-type: x mandatory;
-    //   width: 550px;
-    //   &__black {
-    //     width: 450px;
-    //   }
-
-    //   &__pic {
-    //     left: 100%;
-    //   }
-
-    //   &__white {
-    //     top: 70px;
-    //     left: 120%;
-    //   }
-    // }
   }
   .start {
     &__section {
@@ -388,29 +426,11 @@
       }
     }
   }
-  // .join {
-  //   &__container {
-  //     width: 500px;
-  //   }
-  //   &__section {
-  //     &__text {
-  //       &-info {
-  //         max-width: 350px;
-  //         font-size: 24px;
-  //       }
-  //     }
-  //     &__img {
-  //       padding-top: 25px;
-  //       .crypto_phone {
-  //         height: 350px;
-  //       }
-  //     }
-  //   }
-  // }
+
   .advantages {
     &__section {
       margin: 0 auto;
-      padding: 0 20px 0 20px;
+      padding: 0 20px;
       &__heading {
         font-size: 24px;
         &-small {
@@ -436,10 +456,9 @@
       &__send {
         display: flex;
         justify-content: center;
-        &__text {
-        }
+
         &-box {
-          padding: 0 20px 0 20px;
+          padding: 0 20px;
           margin-top: 0;
           flex-direction: column;
           &__text {
@@ -562,38 +581,6 @@
     padding-top: 72px;
   }
 
-  .invest {
-    padding: 0 20px 0 20px;
-    margin-top: 64px;
-    &__section {
-      overflow: scroll;
-      display: flex;
-      flex-direction: row;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      max-width: 698px;
-
-      &__pic {
-        left: 160%;
-      }
-
-      .white-box {
-        width: 300px;
-      }
-      &__white {
-        padding-left: 20px;
-        top: 70px;
-        left: 190%;
-      }
-      &__black,
-      &__white {
-        &__text {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
   .start {
     &__section {
       margin: 0 auto;
@@ -653,43 +640,6 @@
           }
         }
       }
-    }
-  }
-
-  .join {
-    padding: 0 20px 0 20px;
-    &__section {
-      flex-direction: column;
-
-      text-align: center;
-      &__text {
-        padding: 24px;
-        &-info {
-          text-align: left;
-          font-size: 24px;
-          font-weight: normal;
-          margin: 0;
-        }
-        &__media-button {
-          margin: 0;
-          margin-top: 10px;
-        }
-      }
-      &__img {
-        margin: 0;
-        padding-top: 12px;
-        padding-bottom: 25px;
-        &-box {
-          padding: 0;
-          .crypto_phone {
-            width: 150px;
-            height: auto;
-          }
-        }
-      }
-    }
-    .join__button {
-      margin: 0 auto;
     }
   }
 
@@ -769,91 +719,6 @@
     }
   }
 
-  .comparation {
-    padding: 0 20px 0 20px;
-    margin-top: 64px;
-    &__section {
-      &__title {
-        font-size: 24px;
-
-        &-subtitle {
-          font-size: 14px;
-        }
-      }
-
-      &__box {
-        &__features {
-          gap: 16px;
-
-          &__items {
-            padding: 90px 16px 32px;
-
-            li {
-              margin-top: 24px;
-              font-size: 14px;
-              font-weight: bold;
-            }
-          }
-        }
-        &__blocks {
-          overflow: scroll;
-          padding: 20px;
-          .slide1 {
-            background-color: var(--white);
-          }
-
-          .slide2 {
-            background-color: var(--gray-dark);
-          }
-
-          .slide3 {
-            background-color: var(--black);
-            color: var(--white);
-          }
-
-          &__item {
-            padding: 32px 30px;
-            margin: 0;
-            margin-right: 16px;
-
-            &-heading {
-              font-size: 20px;
-              width: 110px;
-              margin-top: 10px;
-            }
-
-            ul {
-              padding: 0;
-              margin: 0;
-            }
-            li {
-              margin-top: 24px;
-
-              &:first-child {
-                margin: 0;
-              }
-
-              img {
-                width: 24px;
-              }
-            }
-          }
-        }
-      }
-      &__send {
-        justify-content: center;
-        padding: 32px 20px 0 20px;
-        &-box {
-          &__text {
-            font-weight: normal;
-            font-size: 18px;
-            margin: 0 0 20px 0;
-          }
-        }
-      }
-    }
-  }
-
   .result {
     padding: 0 20px 0 20px;
     margin: 0;
@@ -883,6 +748,7 @@
       padding: 20px;
       &-slide {
         gap: 12px;
+
         &__info {
           &__count {
             h2 {

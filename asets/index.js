@@ -60,7 +60,7 @@ const resultSwiper = new Swiper(".result__swiper", {
   },
 
   // breakpoints: {
-  //   700: {
+  //   650: {
   //     slidesPerView: 2,
   //   },
   // },
