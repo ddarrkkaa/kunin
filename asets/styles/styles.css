@@ -868,10 +868,13 @@ footer {
     transform: translate(-20%, -50%);
   }
   .invest__section__white {
-    right: -40px;
+    right: 20px;
   }
   .kunin__section__item__pic__box img {
     max-width: 250px;
+  }
+  .advantages .media-container {
+    width: 1500px;
   }
 }
 @media screen and (max-width: 1650px) {
@@ -880,6 +883,9 @@ footer {
   }
   .join__container {
     width: 1430px;
+  }
+  .advantages .media-container {
+    width: 1200px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -933,6 +939,13 @@ footer {
     font-size: 16px;
     width: 308px;
   }
+  .footer__info__messagers {
+    padding: 0;
+  }
+  .media-container {
+    width: 1200px;
+    margin: 70px auto;
+  }
 }
 @media screen and (max-width: 1220px) {
   .container-header {
@@ -985,6 +998,26 @@ footer {
     font-size: 16px;
     width: 308px;
   }
+  .advantages .media-container {
+    width: 600px;
+  }
+  .advantages__section__links {
+    grid-template-columns: repeat(2, 2fr);
+    justify-self: center;
+  }
+  .faq__section .dropdown {
+    padding-right: 0;
+  }
+  .faq__section .dropdown__title {
+    padding: 0;
+  }
+  .faq__section__box {
+    padding-right: 100px;
+  }
+  .media-container {
+    width: 900px;
+    margin: 64px auto;
+  }
 }
 @media screen and (max-width: 990px) {
   .container-header {
@@ -1034,11 +1067,66 @@ footer {
     width: 450px;
   }
   .invest__section__pic {
-    left: 70%;
+    left: 90%;
   }
   .invest__section__white {
-    top: 16px;
-    left: 90%;
+    top: 15%;
+    left: 110%;
+  }
+  .comparation__section__send-box__text {
+    width: 300px;
+    margin: 0;
+  }
+  .comparation__section__send-box__button {
+    font-size: 16px;
+  }
+  .comparation__button button {
+    padding: 12px 80px;
+  }
+  .media-container {
+    width: 600px;
+    margin: 64px auto;
+  }
+  .faq__section__box__heading {
+    font-size: 32px;
+  }
+  .faq__section__box__text {
+    font-size: 16px;
+  }
+  .faq__section .dropdown__title {
+    font-size: 14px;
+  }
+  .faq__section__box {
+    padding-right: 100px;
+  }
+  .footer__info__set {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__contacts {
+    gap: 24px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .faq__section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .faq__section__box__heading {
+    font-size: 24px;
+    width: 335px;
+  }
+  .faq__section__box__text {
+    font-size: 14px;
+    width: 335px;
+  }
+  .faq .dropdown {
+    padding: 0;
+  }
+  .faq .dropdown__title {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1064,17 +1152,17 @@ footer {
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    width: 698px;
+    width: 550px;
   }
   .invest__section__black {
     width: 450px;
   }
   .invest__section__pic {
-    left: 80%;
+    left: 100%;
   }
   .invest__section__white {
     top: 70px;
-    left: 100%;
+    left: 120%;
   }
   .start__section-heading {
     font-size: 24px;
@@ -1094,6 +1182,112 @@ footer {
   }
   .join__section__img .crypto_phone {
     height: 350px;
+  }
+  .advantages__section {
+    margin: 0 auto;
+  }
+  .advantages__section__links {
+    margin: 0 auto;
+    width: 335px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .advantages__section__links__item__header {
+    margin: 0;
+    padding: 29px 20px;
+    font-size: 18px;
+  }
+  .advantages__section__send {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .advantages__section__send__text {
+    width: 335px;
+  }
+  .advantages__section__send-box {
+    flex-direction: column;
+  }
+  .advantages__section__send-box__text {
+    font-size: 16px;
+  }
+  .advantages__section__send__button {
+    justify-self: center;
+    width: 185px;
+    padding: 12px 48px;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+  .advantages__section__send__button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .comparation__section__send {
+    padding-top: 0;
+  }
+  .comparation__section__send-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .comparation__section__send-box__text {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .comparation__section__send-box__button button {
+    padding: 12px;
+  }
+  .form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .footer-desktop {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+    font-size: 12px;
+    width: 335px;
+    margin: 0 auto;
+  }
+  .footer-mobile__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-mobile__box__contacts__items {
+    display: flex;
+    gap: 8px;
+  }
+  .footer-mobile__box__contacts__items img {
+    width: 14px;
+  }
+  .footer-mobile__box__contacts__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-mobile__box__contacts__form__heading {
+    text-align: center;
+  }
+  .footer-mobile__box__contacts__form__link {
+    border-radius: 20px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+  }
+  .footer-mobile__box__messagers {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 16px auto;
+  }
+  .footer-mobile__box__messagers img {
+    width: 32px;
+  }
+  .footer-mobile__box__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-mobile__box__logo img {
+    width: 35px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1349,22 +1543,6 @@ footer {
   .comparation__section__box__blocks__item li img {
     width: 24px;
   }
-  .comparation__section__send {
-    padding-top: 0;
-  }
-  .comparation__section__send-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .comparation__section__send-box__text {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-  }
-  .comparation__section__send-box__button {
-    width: 185px;
-  }
   .result {
     padding: 0;
     margin: 0;
@@ -1426,113 +1604,11 @@ footer {
   .kunin__section__item__pic {
     position: static;
   }
-  .advantages__section {
+  .form {
+    width: 335px;
     margin: 0 auto;
-  }
-  .advantages__section__links {
-    margin: 0 auto;
-    width: 335px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .advantages__section__links__item__header {
-    margin: 0;
-    padding: 29px 20px;
-    font-size: 18px;
-  }
-  .advantages__section__send {
-    justify-content: center;
-    display: flex;
-  }
-  .advantages__section__send__text {
-    width: 335px;
-    padding: 0;
-  }
-  .advantages__section__send-box {
-    flex-direction: column;
-    text-align: center;
-  }
-  .advantages__section__send-box__text {
-    font-size: 16px;
-  }
-  .advantages__section__send__button {
-    justify-self: center;
-    width: 185px;
-    padding: 12px 48px;
-    border-radius: 40px;
-    margin-top: 20px;
-  }
-  .advantages__section__send__button-container {
-    display: flex;
-    justify-content: center;
-  }
-  .faq__section {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .faq__section__box__heading {
-    font-size: 24px;
-    width: 335px;
-  }
-  .faq__section__box__text {
-    font-size: 14px;
-    width: 335px;
-  }
-  .faq .dropdown {
-    padding: 0;
-  }
-  .faq .dropdown__title {
-    font-size: 14px;
   }
   .form__section__text {
     font-size: 14px;
-  }
-  .footer-desktop {
-    display: none;
-  }
-  .footer-mobile {
-    display: block;
-    font-size: 12px;
-    width: 335px;
-    margin: 0 auto;
-  }
-  .footer-mobile__box {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer-mobile__box__contacts__items {
-    display: flex;
-    gap: 8px;
-  }
-  .footer-mobile__box__contacts__items img {
-    width: 14px;
-  }
-  .footer-mobile__box__contacts__form {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-mobile__box__contacts__form__heading {
-    text-align: center;
-  }
-  .footer-mobile__box__contacts__form__link {
-    border-radius: 20px;
-    padding: 12px 16px;
-    margin-bottom: 8px;
-  }
-  .footer-mobile__box__messagers {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin: 16px auto;
-  }
-  .footer-mobile__box__messagers img {
-    width: 32px;
-  }
-  .footer-mobile__box__logo {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-mobile__box__logo img {
-    width: 35px;
   }
 }/*# sourceMappingURL=styles.css.map */

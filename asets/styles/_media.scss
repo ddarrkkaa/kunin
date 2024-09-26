@@ -17,7 +17,7 @@
         transform: translate(-20%, -50%);
       }
       &__white {
-        right: -40px;
+        right: 20px;
       }
     }
   }
@@ -34,6 +34,11 @@
       }
     }
   }
+  .advantages {
+    .media-container {
+      width: 1500px;
+    }
+  }
 }
 
 @media screen and (max-width: 1650px) {
@@ -43,6 +48,11 @@
   .join {
     &__container {
       width: 1430px;
+    }
+  }
+  .advantages {
+    .media-container {
+      width: 1200px;
     }
   }
 }
@@ -111,6 +121,17 @@
       }
     }
   }
+  .footer {
+    &__info {
+      &__messagers {
+        padding: 0;
+      }
+    }
+  }
+  .media-container {
+    width: 1200px;
+    margin: 70px auto;
+  }
 }
 
 @media screen and (max-width: 1220px) {
@@ -177,6 +198,36 @@
       }
     }
   }
+
+  .advantages {
+    .media-container {
+      width: 600px;
+    }
+    &__section {
+      &__links {
+        grid-template-columns: repeat(2, 2fr);
+        justify-self: center;
+      }
+    }
+  }
+
+  .faq {
+    &__section {
+      .dropdown {
+        padding-right: 0;
+        &__title {
+          padding: 0;
+        }
+      }
+      &__box {
+        padding-right: 100px;
+      }
+    }
+  }
+  .media-container {
+    width: 900px;
+    margin: 64px auto;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -234,18 +285,106 @@
       }
 
       &__pic {
-        left: 70%;
+        left: 90%;
       }
 
       &__white {
-        top: 16px;
-        left: 90%;
+        top: 15%;
+        left: 110%;
       }
+    }
+  }
+  .comparation {
+    &__section {
+      &__send {
+        &-box {
+          &__text {
+            width: 300px;
+            margin: 0;
+          }
+          &__button {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .comparation__button {
+    button {
+      padding: 12px 80px;
+    }
+  }
+  .media-container {
+    width: 600px;
+    margin: 64px auto;
+  }
+  .faq {
+    &__section {
+      &__box {
+        &__heading {
+          font-size: 32px;
+        }
+        &__text {
+          font-size: 16px;
+        }
+      }
+      .dropdown {
+        &__title {
+          font-size: 14px;
+        }
+      }
+      &__box {
+        padding-right: 100px;
+      }
+    }
+  }
+  .footer {
+    &__info {
+      &__set {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    &__contacts {
+      gap: 24px;
+      flex-direction: column;
     }
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
+  .faq {
+    &__section {
+      // margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      &__box {
+        &__heading {
+          font-size: 24px;
+          width: 335px;
+        }
+        &__text {
+          font-size: 14px;
+          width: 335px;
+        }
+      }
+    }
+    .dropdown {
+      padding: 0;
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }
+  .comparation {
+    &__section {
+      &__send-box {
+        &__button {
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -272,18 +411,18 @@
       flex-direction: row;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      width: 698px;
+      width: 550px;
       &__black {
         width: 450px;
       }
 
       &__pic {
-        left: 80%;
+        left: 100%;
       }
 
       &__white {
         top: 70px;
-        left: 100%;
+        left: 120%;
       }
     }
   }
@@ -312,6 +451,135 @@
         padding-top: 25px;
         .crypto_phone {
           height: 350px;
+        }
+      }
+    }
+  }
+  .advantages {
+    &__section {
+      margin: 0 auto;
+      &__heading {
+      }
+
+      &__links {
+        margin: 0 auto;
+        width: 335px;
+        grid-template-columns: repeat(1, 1fr);
+        &__item {
+          &__header {
+            margin: 0;
+            padding: 29px 20px;
+            font-size: 18px;
+          }
+        }
+      }
+      &__send {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        &__text {
+          width: 335px;
+          // padding: 0;
+        }
+        &-box {
+          flex-direction: column;
+          &__text {
+            font-size: 16px;
+          }
+        }
+        &__button {
+          justify-self: center;
+          width: 185px;
+          padding: 12px 48px;
+          border-radius: 40px;
+          margin-top: 20px;
+          &-container {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .comparation {
+    &__section {
+      &__send {
+        padding-top: 0;
+
+        &-box {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          &__text {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+          }
+
+          &__button {
+            button {
+              padding: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .footer {
+    &-desktop {
+      display: none;
+    }
+    &-mobile {
+      display: block;
+      font-size: 12px;
+      width: 335px;
+      margin: 0 auto;
+
+      &__box {
+        display: flex;
+        justify-content: space-between;
+        &__contacts {
+          &__items {
+            display: flex;
+            gap: 8px;
+            img {
+              width: 14px;
+            }
+          }
+          &__form {
+            display: flex;
+            flex-direction: column;
+            &__heading {
+              text-align: center;
+            }
+            &__link {
+              border-radius: 20px;
+              padding: 12px 16px;
+              margin-bottom: 8px;
+            }
+          }
+        }
+        &__messagers {
+          display: flex;
+          justify-content: space-between;
+          width: 200px;
+          margin: 16px auto;
+          img {
+            width: 32px;
+          }
+        }
+
+        &__logo {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 35px;
+          }
         }
       }
     }
@@ -613,26 +881,6 @@
           }
         }
       }
-
-      &__send {
-        padding-top: 0;
-
-        &-box {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-
-          &__text {
-            font-size: 16px;
-            font-weight: normal;
-            margin: 0;
-          }
-
-          &__button {
-            width: 185px;
-          }
-        }
-      }
     }
   }
 
@@ -717,135 +965,14 @@
     }
   }
 
-  .advantages {
-    &__section {
-      margin: 0 auto;
-      &__heading {
-      }
-
-      &__links {
-        margin: 0 auto;
-        width: 335px;
-        grid-template-columns: repeat(1, 1fr);
-        &__item {
-          &__header {
-            margin: 0;
-            padding: 29px 20px;
-            font-size: 18px;
-          }
-        }
-      }
-      &__send {
-        justify-content: center;
-        display: flex;
-        &__text {
-          width: 335px;
-          padding: 0;
-        }
-        &-box {
-          flex-direction: column;
-          text-align: center;
-          &__text {
-            font-size: 16px;
-          }
-        }
-        &__button {
-          justify-self: center;
-          width: 185px;
-          padding: 12px 48px;
-          border-radius: 40px;
-          margin-top: 20px;
-          &-container {
-            display: flex;
-            justify-content: center;
-          }
-        }
-      }
-    }
-  }
-
-  .faq {
-    &__section {
-      // margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      &__box {
-        &__heading {
-          font-size: 24px;
-          width: 335px;
-        }
-        &__text {
-          font-size: 14px;
-          width: 335px;
-        }
-      }
-    }
-    .dropdown {
-      padding: 0;
-      &__title {
-        font-size: 14px;
-      }
-    }
+  .form {
+    width: 335px;
+    margin: 0 auto;
   }
   .form {
     &__section {
       &__text {
         font-size: 14px;
-      }
-    }
-  }
-  .footer {
-    &-desktop {
-      display: none;
-    }
-    &-mobile {
-      display: block;
-      font-size: 12px;
-      width: 335px;
-      margin: 0 auto;
-
-      &__box {
-        display: flex;
-        justify-content: space-between;
-        &__contacts {
-          &__items {
-            display: flex;
-            gap: 8px;
-            img {
-              width: 14px;
-            }
-          }
-          &__form {
-            display: flex;
-            flex-direction: column;
-            &__heading {
-              text-align: center;
-            }
-            &__link {
-              border-radius: 20px;
-              padding: 12px 16px;
-              margin-bottom: 8px;
-            }
-          }
-        }
-        &__messagers {
-          display: flex;
-          justify-content: space-between;
-          width: 200px;
-          margin: 16px auto;
-          img {
-            width: 32px;
-          }
-        }
-
-        &__logo {
-          display: flex;
-          justify-content: center;
-          img {
-            width: 35px;
-          }
-        }
       }
     }
   }
