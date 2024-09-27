@@ -413,6 +413,12 @@
     max-width: 550px;
   }
 
+  .header {
+    .menu--right {
+      display: block;
+    }
+  }
+
   .invest {
     margin-top: 64px;
   }
