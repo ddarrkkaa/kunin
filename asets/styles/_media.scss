@@ -48,13 +48,8 @@
   .container-header {
     max-width: 1200px;
   }
-  .start__section-heading,
-  .review__swiper__heading-main,
-  .comparation__section__title,
-  .result__section__title,
-  .advantages__section__heading,
-  .advantages__section__heading,
-  .form__section__heading {
+  .title {
+    margin-top: 72px;
     font-size: 64px;
   }
   .invest {
@@ -118,12 +113,19 @@
     margin: 70px auto;
   }
   .invest {
-    // margin-top: 64px;
     &__section {
       overflow: scroll;
 
       &__black {
         padding-right: 550px;
+      }
+    }
+  }
+  .role {
+    .role-slide {
+      &__text {
+        height: 400px;
+        width: 500px;
       }
     }
   }
@@ -133,19 +135,32 @@
   .container-header {
     max-width: 990px;
   }
-  .start__section-heading,
-  .review__swiper__heading-main,
-  .comparation__section__title,
-  .result__section__title,
-  .advantages__section__heading,
-  .form__section__heading {
-    font-size: 32px;
+  .title {
+    font-size: 64px;
+    margin-top: 48px;
+  }
+  .subtitle {
+    font-size: 18px;
   }
 
   .advantages {
     &__section {
       &__links {
         grid-template-columns: repeat(2, 2fr);
+      }
+      &__send__button {
+        margin-left: 20px;
+      }
+    }
+  }
+  .role {
+    .role-slide {
+      &__img {
+        display: none !important;
+      }
+      &__text {
+        height: fit-content;
+        width: auto;
       }
     }
   }
@@ -163,7 +178,9 @@
       }
     }
   }
-
+  .benefits__title {
+    margin-top: 120px;
+  }
   .faq {
     &__section {
       .dropdown {
@@ -183,6 +200,14 @@
   .container-header {
     max-width: 770px;
   }
+  .title {
+    margin-top: 56px;
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+
   .start {
     max-width: 650px;
     margin: 0 auto;
@@ -192,6 +217,10 @@
         max-width: 550px;
       }
     }
+  }
+
+  .reviews {
+    margin-bottom: 64px;
   }
   .join {
     padding: 0 20px;
@@ -226,19 +255,46 @@
       margin: 24px auto;
     }
   }
+  .role {
+    margin-top: 64px;
+    .role-slide {
+      padding: 24px;
+      &__info {
+        height: 250px;
+        width: auto;
+        display: block;
+      }
+      &__title {
+        font-size: 14px;
+      }
+      &__subtitle {
+        font-size: 14px;
+      }
+      &__count {
+        font-size: 48px;
+      }
+    }
+  }
+  .invest {
+    &__section {
+      margin-top: 64px;
+    }
+  }
+  .result {
+    .result-slide {
+      &__count {
+        margin-bottom: 0;
+      }
+    }
+    &__subtitle {
+      padding-bottom: 0;
+    }
+  }
 
   .comparation {
     padding: 0 20px;
     margin-top: 64px;
     &__section {
-      &__title {
-        font-size: 24px;
-
-        &-subtitle {
-          font-size: 14px;
-        }
-      }
-
       &__box {
         &__features {
           gap: 16px;
@@ -355,23 +411,16 @@
 }
 
 @media screen and (max-width: 750px) {
-  .start__section-heading,
-  .review__swiper__heading-main,
-  .comparation__section__title,
-  .result__section__title,
-  .advantages__section__heading,
-  .form__section__heading {
-    font-size: 24px;
-  }
-
   .invest {
-    // margin-top: 64px;
     &__section {
       overflow: scroll;
       &__black {
         padding-right: 350px;
       }
     }
+  }
+  .advantages__section__send__button {
+    padding: 16px 100px;
   }
   .faq {
     &__section {
@@ -405,6 +454,15 @@
     padding: 12px 48px;
     font-size: 16px;
   }
+
+  .title {
+    margin-top: 64px;
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+
   .header__section__nav-bar__link {
     display: none;
   }
@@ -649,82 +707,6 @@
     }
   }
 
-  .role {
-    margin-top: 64px;
-
-    &__heading {
-      font-size: 24px;
-      margin: 0 auto;
-      padding-bottom: 24px;
-    }
-    .media__box {
-      display: block;
-      padding: 24px 16px;
-      &__heading {
-        display: flex;
-        justify-content: space-between;
-        &__count {
-          font-size: 48px;
-          margin: 0;
-        }
-        &__img {
-          width: 234px;
-          height: 82px;
-          overflow: hidden;
-          border-radius: 20px;
-          img {
-            object-fit: cover;
-          }
-        }
-      }
-      &__title,
-      &__subtitle {
-        font-size: 16px;
-      }
-    }
-
-    .desktop-box {
-      display: none;
-    }
-
-    &__swiper {
-      margin: 0;
-      &__text {
-        &__count {
-          margin: 0;
-          font-size: 48px;
-        }
-        &__heading {
-          font-size: 14px;
-          font-weight: bold;
-          margin: 0;
-        }
-        &__subtitle {
-          font-size: 14px;
-        }
-      }
-      &__img {
-        padding-top: 72px;
-      }
-    }
-    .swiper {
-      margin: 0 auto;
-      padding: 0;
-      &-slide {
-        padding: 24px 16px;
-        padding: 0;
-      }
-
-      &-pagination {
-        position: static;
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        margin-top: 24px;
-      }
-    }
-  }
-
   .result {
     padding: 0 20px 0 20px;
     margin: 0;
@@ -747,6 +729,15 @@
       }
       &__buttons {
         display: block;
+      }
+    }
+    .role {
+      .role-slide {
+        height: 300px;
+        &__info {
+          justify-content: left;
+        }
+        height: 300px !important;
       }
     }
 
