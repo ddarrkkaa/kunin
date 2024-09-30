@@ -1,3 +1,10 @@
+const menu = document.querySelector(".menu");
+const burger = menu.querySelector(".burger");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("open");
+});
+
 new Swiper(".reviews__slider", {
   loop: true,
   spaceBetween: 24,
@@ -45,7 +52,7 @@ new Swiper(".role__slider", {
 });
 
 new Swiper(".benefits__slider", {
-  loop: false,
+  loop: true,
   spaceBetween: 48,
 
   breakpoints: {
@@ -53,13 +60,10 @@ new Swiper(".benefits__slider", {
       slidesPerView: 1,
     },
     950: {
-      slidesPerView: 1.5,
-    },
-    1400: {
       slidesPerView: 2,
     },
     1600: {
-      slidesPerView: 2.5,
+      slidesPerView: 3,
     },
   },
 });

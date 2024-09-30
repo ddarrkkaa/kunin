@@ -15,34 +15,58 @@
     align-items: center;
     height: 100px;
 
-    &__nav-bar {
+    /* Menu container */
+    .menu {
       display: flex;
       align-items: center;
-
-      &__link {
-        a {
-          text-decoration: none;
-          font-size: 16px;
-          color: var(--color-black);
-          margin-right: 24px;
-
-          &:hover {
-            transition: all 0.5s ease-out;
-          }
-        }
-        a:last-child {
-          margin-right: 0;
-        }
-      }
+      justify-content: space-between;
+      padding: 15px;
     }
-  }
-  .menu--right {
-    display: none;
+
+    /* Menu items */
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .menu li {
+      margin: 0 10px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
   }
 }
 .start {
   &__section {
     margin-top: 64px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateX(-40%);
+      left: 50%;
+      width: 70%;
+      height: 70%;
+      z-index: -1;
+      border-radius: 50%;
+      filter: blur(100px);
+      background: linear-gradient(
+        100.53deg,
+        rgb(223, 249, 65) 50%,
+        rgba(90, 209, 47, 0.6) 50%
+      );
+    }
 
     &-heading {
       font-size: 80px;
@@ -64,6 +88,7 @@
     }
   }
 }
+
 .menuToggle {
   align-items: center;
   display: block;
@@ -93,7 +118,6 @@
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    position: relative;
     background: var(--black);
     border-radius: 3px;
     z-index: 1;
@@ -170,6 +194,7 @@
 .reviews {
   margin-top: 80px;
   margin-bottom: 122px;
+
   h2,
   p {
     margin: 0;
@@ -216,14 +241,14 @@
       border-radius: 50%;
       width: 65px;
       height: 65px;
+      cursor: pointer;
 
+      transition: all 0.5s ease-out;
       &:hover {
-        transition: all 0.5s ease-out;
         background-color: var(--black);
       }
 
       img {
-        // padding-top: 22px;
         width: 22px;
         &:hover {
           transition: all 0.5s ease-out;
@@ -260,9 +285,29 @@
       border-radius: 40px;
       .crypto_phone {
         width: 311px;
+        position: relative;
+        z-index: 2;
       }
       &-box {
         padding: 24px 193px 38px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 70%;
+          height: 90%;
+          border-radius: 50%;
+          filter: blur(30px);
+          background: linear-gradient(
+            100deg,
+            rgba(217, 250, 0, 0.2) 50%,
+            rgba(114, 225, 51, 0.4) 60%
+          );
+        }
       }
     }
   }
@@ -281,7 +326,27 @@
 
 .role {
   margin-top: 120px;
+  position: relative;
+  &__title {
+    position: relative;
+    z-index: 1;
+  }
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 0%;
+    width: 40%;
+    height: 100%;
+    border-radius: 60%;
+    filter: blur(100px);
+    background: linear-gradient(
+      100deg,
+      rgb(223, 249, 65, 0.5) 42%,
+      rgba(138, 208, 97, 0.8) 58%
+    );
+  }
   .swiper-wrapper {
     padding: 20px;
   }
@@ -395,10 +460,37 @@
 }
 
 .benefits {
-  .benefits__title {
+  position: relative;
+
+  &__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .inner_container {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 20%;
+      left: 10%;
+      width: 40%;
+      height: 80%;
+      border-radius: 60%;
+      filter: blur(150px);
+      background: linear-gradient(
+        150deg,
+        rgb(223, 249, 65, 0.3) 50%,
+        rgba(42, 192, 31, 0.692) 50%
+      );
+    }
   }
   .swiper-wrapper {
     padding: 20px;
+  }
+  .benefits__slider {
+    position: relative;
+    z-index: 10;
   }
   .benefits-slide {
     h5 {
@@ -422,8 +514,6 @@
       font-size: 20px;
       font-weight: normal;
     }
-    &__info {
-    }
   }
   .swiper-slide {
     &-active {
@@ -441,6 +531,24 @@
 }
 .comparation {
   &__section {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 50%;
+      left: 30%;
+      width: 50%;
+      height: 30%;
+      border-radius: 60%;
+      filter: blur(400px);
+      background: linear-gradient(
+        100deg,
+        rgb(223, 249, 65, 0.9) 100%,
+        rgba(42, 192, 31, 0.863) 0%
+      );
+    }
     &__title {
       margin-bottom: 0;
     }
@@ -555,7 +663,26 @@
 
 .result {
   margin-top: 120px;
+  position: relative;
 
+  .inner_container {
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 20%;
+      left: 10%;
+      width: 40%;
+      height: 80%;
+      border-radius: 60%;
+      filter: blur(150px);
+      background: linear-gradient(
+        150deg,
+        rgb(223, 249, 65, 0.3) 50%,
+        rgba(42, 192, 31, 0.692) 50%
+      );
+    }
+  }
   &__title {
     margin: 0;
   }
@@ -689,9 +816,27 @@
 }
 
 .advantages {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 40%;
+    left: 0%;
+    width: 30%;
+    height: 40%;
+    border-radius: 60%;
+    filter: blur(150px);
+    background: linear-gradient(
+      100deg,
+      rgb(223, 249, 65, 0.5) 50%,
+      rgba(42, 192, 31, 0.692) 50%
+    );
+  }
+
   &__section {
     &__heading {
-      margin: 0;
       &-small {
         margin: 0;
         font-size: 20px;
@@ -887,6 +1032,12 @@ footer {
       padding-right: 93px;
       &__item {
         width: 48px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .footer__info__messagers__item:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
       }
     }
   }

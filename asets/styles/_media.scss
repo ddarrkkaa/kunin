@@ -706,6 +706,22 @@
       }
     }
   }
+  .comparation {
+    &__section {
+      &::after {
+        top: 30%;
+        left: 30%;
+        width: 80%;
+        height: 50%;
+        filter: blur(100px);
+        background: linear-gradient(
+          270deg,
+          rgba(249, 249, 65, 0.3) 50%,
+          rgba(69, 192, 31, 0.692) 50%
+        );
+      }
+    }
+  }
 
   .result {
     padding: 0 20px 0 20px;
