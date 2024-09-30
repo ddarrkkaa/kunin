@@ -513,7 +513,6 @@ img {
 
 .comparation__section {
   position: relative;
-  overflow: hidden;
 }
 .comparation__section::after {
   position: absolute;
