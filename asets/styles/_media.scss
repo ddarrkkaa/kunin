@@ -9,7 +9,11 @@
     }
   }
   .invest {
-    padding: 0 20px;
+    &__section {
+      &__black {
+        padding: 80px 140px;
+      }
+    }
   }
 }
 
@@ -24,12 +28,11 @@
         width: 250px;
       }
       &__white {
-        left: 65%;
-        right: 35px;
+        padding-right: 50px;
       }
       &__black {
-        padding-right: 230px;
-        padding-left: 40px;
+        padding-right: 150px;
+        padding-left: 60px;
       }
       &__white,
       &__black {
@@ -60,14 +63,16 @@
       }
 
       &__pic {
-        left: 110%;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
       }
 
       &__white {
         width: 300px;
-        top: 100px;
-        left: 120%;
-        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         &__button {
           margin-top: 40px;
           padding: 12px 48px;
@@ -112,15 +117,6 @@
     width: 1200px;
     margin: 70px auto;
   }
-  .invest {
-    &__section {
-      overflow: scroll;
-
-      &__black {
-        padding-right: 550px;
-      }
-    }
-  }
   .role {
     .role-slide {
       &__text {
@@ -143,6 +139,22 @@
     font-size: 18px;
   }
 
+  .invest {
+    overflow: scroll;
+    &__section {
+      &__black {
+        padding-right: 150px;
+        width: 650px;
+      }
+
+      &__pic {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
   .advantages {
     &__section {
       &__links {
@@ -278,6 +290,9 @@
   .invest {
     &__section {
       margin-top: 64px;
+      &__white {
+        padding-left: 50px;
+      }
     }
   }
   .result {
@@ -375,7 +390,20 @@
       padding: 12px 80px;
     }
   }
-
+  .invest {
+    overflow: scroll;
+    &__section {
+      width: 1000px;
+      &__white {
+        padding-left: 150px;
+        width: 500px;
+        &__button {
+          margin-top: 10px;
+          width: 210px;
+        }
+      }
+    }
+  }
   .faq {
     &__section {
       &__box {
@@ -411,14 +439,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  .invest {
-    &__section {
-      overflow: scroll;
-      &__black {
-        padding-right: 350px;
-      }
-    }
-  }
   .advantages__section__send__button {
     padding: 16px 100px;
   }
@@ -636,9 +656,64 @@
 }
 
 @media screen and (max-width: 550px) {
-  .container-header {
-    max-width: 330px;
-    height: 60px;
+  .header {
+    .menu ul {
+      display: none;
+    }
+
+    .menu .burger {
+      display: block;
+      cursor: pointer;
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 5px;
+    }
+
+    .menu .burger div {
+      width: 100%;
+      height: 3px;
+      background-color: var(--black);
+      border-radius: 5px;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    }
+
+    .menu.open .burger div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu.open .burger div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu.open .burger div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu.open ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: var(--white);
+      padding: 20px;
+    }
+
+    .menu.open ul li {
+      margin: 10px 0;
+    }
+
+    .menu.open ul a {
+      font-size: 18px;
+      color: var(--black);
+      text-decoration: none;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   .container-start {
